@@ -1,0 +1,20 @@
+CREATE TABLE `asset` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `portfolio` varchar(100) DEFAULT NULL,
+  `asset_ref` varchar(100) DEFAULT NULL,
+  `asset_address` varchar(100) DEFAULT NULL,
+  `asset_zipcode` varchar(45) DEFAULT NULL,
+  `asset_city` varchar(45) DEFAULT NULL,
+  `asset_is_restricted` tinyint(4) DEFAULT NULL,
+  `asset_yoc` int(11) DEFAULT NULL,
+  `unit_ref` varchar(45) DEFAULT NULL,
+  `unit_size` int(11) DEFAULT NULL,
+  `unit_is_rented` tinyint(4) DEFAULT NULL,
+  `unit_rent` int(11) DEFAULT NULL,
+  `unit_type` varchar(45) DEFAULT NULL,
+  `unit_tenant` varchar(45) DEFAULT NULL,
+  `unit_lease_start` varchar(45) DEFAULT NULL,
+  `unit_lease_end` varchar(45) DEFAULT NULL,
+  `data_timestamp` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=latin1;
